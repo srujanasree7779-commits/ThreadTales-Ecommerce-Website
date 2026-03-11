@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5efe6;
+    color: #2e2e2e;
+}
+
+/* ========================= */
+/* LUXURY HEADER */
+/* ========================= */
+
+.luxury-header {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f5efe6;
+}
+
+.logo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background: linear-gradient(to right, #9e7b28, #dcba6a, #9e7c2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #5f5f5f;
+}
+
+.logo-line {
+    width: 120px;
+    height: 2px;
+    background: #c6a75e;
+    margin: 20px auto 0;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.nav-links a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b9933d;
+}
+
+/* ========================= */
+/* SEARCH BAR */
+/* ========================= */
+
+.search-bar input {
+    padding: 8px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 14px;
+    background: #7b7058;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #b9933d;
+}
+
+/* ========================= */
+/* CATEGORY */
+/* ========================= */
+
+.category {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.category a {
+    margin: 0 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.category a:hover {
+    color: #b9933d;
+}
+
+/* ========================= */
+/* PRODUCT GRID */
+/* ========================= */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.product {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 18px;
+    color: #b9933d;
+    font-weight: 600;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #b9933d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #9e7b28;
+}
+
+/* ========================= */
+/* AUTH PAGES */
+/* ========================= */
+
+.auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f9f9f9, #f3f3f3);
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.auth-card input:focus {
+    border-color: #b9933d;
+    outline: none;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: #b9933d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-btn:hover {
+    background: #9e7b28;
+}
+
+.auth-link {
+    margin-top: 15px;
+    display: block;
+}
+
+/* ========================= */
+/* PRODUCT PAGE */
+/* ========================= */
+
+.product-page {
+    display: flex;
+    gap: 60px;
+    padding: 60px;
+    background: #f9f9f9;
+    align-items: flex-start;
+}
+
+.product-image img {
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-details {
+    max-width: 500px;
+}
+
+.product-details h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.rating-box {
+    background: #e8f8f0;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 12px 0;
+    font-weight: bold;
+    color: #0a7c4a;
+}
+
+.product-details .price {
+    font-size: 28px;
+    color: #b9933d;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.size-section {
+    margin-bottom: 20px;
+}
+
+.size-select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.button-group {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* PRIMARY BUTTON (BUY NOW) */
+.buy-btn {
+    padding: 13px 30px;
+    background: #b9933d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #9e7b28;
+    transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTON (ADD TO BAG) */
+.cart-btn {
+    padding: 13px 30px;
+    background: white;
+    color: #b9933d;
+    border: 2px solid #b9933d;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: #f3e8d3;
+    transform: translateY(-2px);
+}
+
+/* WISHLIST BUTTON */
+.wishlist-btn {
+    padding: 12px 16px;
+    background: white;
+    border: 2px solid #b9933d;
+    border-radius: 8px;
+    color: #b9933d;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+    background: #b9933d;
+    color: white;
+    transform: translateY(-2px);
+}
